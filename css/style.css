@@ -269,7 +269,9 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
+.hidden{
+  overflow: hidden;
+}
 
 @media (max-width: 1080px) {
   .colors__items {
@@ -407,11 +409,13 @@ a {
 
   .nav__menu--active {
     transform: translateX(0);
-    transform: translateY(10px);
+    transform: translateY(100px);
     height: 700px;
     width: 100%;
     background: #000;
     transition: all .7s;
+    position: fixed;
+    z-index: 10;
   }
 
   .nav__menu-item {

@@ -11,8 +11,9 @@ $(function () {
     //анимируем переход на расстояние - top за 1500 мс
     $("body,html").animate({ scrollTop: top }, 1500);
   });
-  $('.nav__menu-btn').on('click', function () {
-    $('.nav__menu-btn').toggleClass('nav__menu-btn--active');
-    $('.nav__menu').toggleClass('nav__menu--active');
+  $(".nav__menu-btn").on("click", function () {
+    $(".nav__menu-btn").toggleClass("nav__menu-btn--active");
+    $(".nav__menu").toggleClass("nav__menu--active");
+    $("body").toggleClass("hidden");
   });
 });
