@@ -269,7 +269,8 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.hidden{
+
+.hidden {
   overflow: hidden;
 }
 
@@ -326,9 +327,9 @@ a {
     padding: 24px 0;
   }
 
-  .header {
+  /* .header {
     padding: 0;
-  }
+  } */
 
   .footer__inner {
     flex-direction: column;
@@ -422,6 +423,13 @@ a {
   .nav__menu-item {
     padding: 20px;
   }
+
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+    justify-content: start;
+  }
 }
 
 @media (max-width: 560px) {
@@ -430,10 +438,7 @@ a {
     max-height: 140px;
   }
 
-  .nav {
-    flex-direction: column;
-    gap: 26px;
-  }
+
 
   .nav__phone {
     font-size: 18px;

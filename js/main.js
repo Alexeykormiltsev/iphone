@@ -16,4 +16,7 @@ $(function () {
     $(".nav__menu").toggleClass("nav__menu--active");
     $("body").toggleClass("hidden");
   });
+  $(".nav__menu-item").on("click", function () {
+    $(".nav__menu").removeClass("nav__menu--active");
+  });
 });
