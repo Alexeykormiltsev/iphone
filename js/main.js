@@ -18,5 +18,7 @@ $(function () {
   });
   $(".nav__menu-item").on("click", function () {
     $(".nav__menu").removeClass("nav__menu--active");
+    $(".nav__menu-btn").removeClass("nav__menu-btn--active");
+    $("body").removeClass("hidden");
   });
 });
